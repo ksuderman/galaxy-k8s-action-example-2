@@ -14,10 +14,10 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: ksuderman/github-action-galaxy-k8s@dev
+      - uses: ksuderman/github-action-galaxy-k8s@v1
         with:
           api-key: secret
-          values-file: values.yml
+          values_file: values.yml
 
       - name: Get Helm values
         shell: bash
