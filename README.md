@@ -4,7 +4,10 @@ This is an example repository showing how to use the [galaxy-k8s-action](https:/
 
 This example includes `abm` configuration files in the respository.  See [this repository](https://github.com/ksuderman/galaxy-k8s-action-example-1) for an exmple of using `galaxy-k8s-action` with `abm` using configuration defined in the workflow.
 
+**NOTE** This example requires a larger job runner (available with GitHub Enterrpise) or a self-hosted job runner with at least eight cores.  The standard GitHub job runner with four cores is enough to install Kubernetes and Galaxy, but does not have enough resources to run the benchmark. 
+
 ```yaml
+# Example workflow
 name: Run a Galaxy benchmark with ABM
 on:
   workflow_dispatch:
